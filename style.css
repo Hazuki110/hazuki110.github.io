@@ -1,6 +1,5 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-  
 html {
   font-size: 100%;
 }
@@ -15,7 +14,7 @@ img {
   max-width: 100%;
 }
 li {
-  list-style : none
+  list-style: none;
 }
 .site-title {
   width: 120px;
@@ -29,7 +28,7 @@ li {
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 60px;
-  border-bottom: solid 1px #383e45
+  border-bottom: solid 1px #383e45;
 }
 .content-title {
   font-size: 1rem;
@@ -43,7 +42,6 @@ li {
 }
 
 /* header */
-
 #header {
   display: flex;
   justify-content: space-between;
@@ -70,7 +68,6 @@ li {
 }
 
 /* main */
-
 #mainvisual {
   margin-bottom: 80px;
 }
@@ -82,7 +79,6 @@ li {
 }
 
 /* Profile */
-
 #profile .content {
   display: flex;
   justify-content: center;
@@ -98,70 +94,51 @@ li {
   text-align: left;
 }
 
-/*-------------------------------------------
-現状と未来
--------------------------------------------*/
+/* 現状と未来 */
 .cards {
-  display: flex;           /* 横並び */
-  gap: 20px;               /* カード間の余白 */
-  justify-content: center; /* 中央揃え */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
 }
-
 .cards li {
   list-style: none;
-  width: 250px;            /* 固定幅 */
+  width: 250px;
 }
-
 .cards img {
   width: 100%;
-  height: 200px;           /* 固定高さ */
-  object-fit: cover;       /* 枠に合わせて切り取り */
-  border-radius: 5px;     /* optional: 角丸 */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
 }
-
 #now ul {
   display: flex;
   justify-content: space-between;
 }
 #now li {
   width: 32%;
+  display: flex;
+  flex-direction: column;
 }
 
-/*-------------------------------------------
-footer
--------------------------------------------*/
+/* footer */
 #footer {
   font-size: 0.5rem;
   padding: 10px 0;
   text-align: center;
 }
 
-/*-------------------------------------------
-SP
--------------------------------------------*/
+/* SP */
 @media screen and (max-width: 600px) {
-
-  /*-------------------------------------------
-  Mainvisual
-  -------------------------------------------*/
   #mainvisual img {
     height: calc(100vh - 60px);
   }
-
-  /*-------------------------------------------
-  About
-  -------------------------------------------*/
   #profile .content {
     flex-direction: column;
   }
   #profile img {
     margin-right: 0;
   }
-
-  /*-------------------------------------------
-  now
-  -------------------------------------------*/
   #now ul {
     flex-direction: column;
   }
