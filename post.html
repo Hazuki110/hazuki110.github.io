@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ</title>
+  <style>
+    body {
+      background: #001f3f;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      width: 300px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0099cc;
+    }
+    .home-button {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  background: #ff5526;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background: #cc441f;
+}
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/ikebo118@yahoo.co.jp.com" method="POST">
+    <h2>お問い合わせ</h2>
+    <input type="text" name="name" placeholder="お名前" required>
+    <input type="email" name="email" placeholder="メールアドレス" required>
+    <textarea name="message" placeholder="お問い合わせ内容" rows="5" required></textarea>
+    <button type="submit">送信する</button>
+    <a href="index.html" class="home-button">ホームへ戻る</a>
+  </form>
+</body>
+</html>
